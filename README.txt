@@ -1,5 +1,6 @@
-To compile:
-    javac -d bin ~/JJE_UpdoxCodingChallenge/src/main/java/PrimeNumberGenerator/Main.java
-
-To run:
-    java ~/JJE_UpdoxCodingChallenge/src/main/java/PrimeNumberGenerator/Main.java
+Main program files located at src/main/java/PrimeNumberGenerator/
+    Main.java
+    FindPrimes.java
+    
+Test files located at src/test/java/PrimeNumberGenerator/
+    FindPrimesTest.java
