@@ -48,6 +48,14 @@ public class FindPrimes implements PrimeNumberGen {
     }
 
     public List<Integer> generate(int startingValue, int endingValue) {
+
+        if (startingValue > endingValue) {
+            int temp;
+            temp = startingValue;
+            startingValue = endingValue;
+            endingValue = temp;
+        }
+
         return IntStream.rangeClosed(startingValue, endingValue).boxed().collect(Collectors.toList());
     }
 }

@@ -24,14 +24,6 @@ public class Main {
 
         user_input.close();
 
-        // Swap values if starting value is larger than the ending value
-        if (startingValue > endingValue) {
-            int temp;
-            temp = startingValue;
-            startingValue = endingValue;
-            endingValue = temp;
-        }
-
         // Create instance of FindPrimes <--- Compilation error: cannot find symbol
         FindPrimes fp = new FindPrimes(startingValue, endingValue);
 
