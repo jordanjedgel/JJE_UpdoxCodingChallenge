@@ -1,11 +1,11 @@
 package PrimeNumberGenerator;
 
 import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Main {
-
-    // public int startingValue;
-    // public int endingValue;
 
     public static void main(String[] args) {
 
@@ -32,8 +32,8 @@ public class Main {
             endingValue = temp;
         }
 
-        // Create instance of FindPrimes
-        FindPrimes fp = new FindPrimes();
+        // Create instance of FindPrimes <--- Compilation error: cannot find symbol
+        FindPrimes fp = new FindPrimes(startingValue, endingValue);
 
         // Generate the list of numbers with the given range
         List<Integer> PotentialPrimes = fp.generate(startingValue, endingValue);
@@ -41,6 +41,7 @@ public class Main {
         // Run the PrimeFinder method
         Prime_List = fp.PrimeFinder(PotentialPrimes);
 
+        System.out.println("Here are the primes within your range: ");
         System.out.println(Prime_List);
     }
 }
